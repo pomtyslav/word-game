@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+.row {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.guess {
+    margin-right: 10px;
+}
+
+.feedback {
+    display: flex;
+}
+
+.feedback span {
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.feedback span.correct {
+    background-color: #a8f0a8;
+}
+
+    .feedback span.present {
+    background-color: #f9f999;
+}
+
+.feedback span.absent {
+    background-color: #f0a8a8;
+}
+
+/* GuessRow.module.css */
+.guessRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guessSquare {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transform: scale(0);
+}
+
+.guessSquare.revealed {
+    transform: scale(1);
+}
+
+.guessSquare.correct {
+    background-color: #6aaa64;
+    color: white;
+}
+
+.guessSquare.present {
+    background-color: #c9b458;
+    color: white;
+}
+
+.guessSquare.absent {
+    background-color: #787c7e;
+    color: white;
+}
